@@ -1,0 +1,390 @@
+h1, h2, h3, h4, h5, h6, p, li
+{
+    cursor:default;
+}
+#portfolio:hover a{
+    opacity:.9;
+    transition-duration:.2s;
+}
+#portfolio {
+    margin: 0 auto;
+    padding-top:8vh;
+    min-height: 92vh;
+
+    font-size:0;
+    a
+    {
+        @include media-query($on-palm) {
+            display:block;
+            width:80%;
+            height:auto;
+            margin: 0 auto;
+            padding: 2vh 0;
+        }
+
+        font-size:0;
+        display:inline-block;
+        padding:0;
+        margin:0;
+        width:33.33vw;
+        width:calc(100%/3);
+        height:30.667vh;
+        height:calc(92vh/3);
+        text-align:center;
+    }
+    a:hover
+    {
+        opacity:1;
+    }
+    img
+    {
+        font-size:0;
+        @include media-query($on-palm) {
+            display:block;
+            width:100%;
+        }
+        top:0; bottom:0; left:0; right:0;
+        vertical-align:middle;
+        padding:0;
+        margin: auto;
+        display:block;
+        max-height:100%;
+        max-width:100%;
+        width:auto;
+        display: inline-block;
+        text-align:center;
+    }
+    a:nth-child(1) img, a:nth-child(4) img
+    {
+        /*height:100%;*/
+    }
+}
+/* Header */
+
+#mainpageheader {
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 0;
+    @include media-query($on-palm) {
+        display:block;
+        position:absolute;
+        margin-top:20px;
+    }
+
+    li:nth-child(3)
+    {
+        padding:0;
+        a
+        {
+            @include media-query($on-palm) {
+                padding:5px;
+                width:80%;
+                font-size:12px;
+            }
+            color:#fff;
+            display:block;
+            padding:3vh 0;
+            width:100%;
+            margin: 0 auto;
+        }
+    }
+    ul {
+        margin: 0;
+        font-size:0;
+    }
+    li:hover,a:hover, li:hover a {
+        color: $brand-color;
+        transform: translateY(1px);
+    }
+    li {
+        @include media-query($on-palm) {
+            padding:5px;
+            width:80%;
+            font-size:12px;
+
+        }
+        margin: 0;
+        padding: 0;
+        font-size: 1.7vmin;
+        width: 33%;
+        min-width: 8%;
+        padding: 3vh 0;
+        color: white;
+        display: inline-block;
+        transition-duration: .5s;
+        cursor: pointer;   
+
+    }
+}
+
+/*https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md*/
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+#video {
+    position: relative;
+    /*background-color:#212121; Testing*/
+
+    width: 100%;
+    text-align: center;
+}
+
+iframe {
+    border:0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    width: 80%;
+    height: 85%;
+    @include media-query($on-palm) {
+        height: calc(80vw/16*9);
+    }
+
+}
+$watch: 30px;
+#hero {
+    height:100vh;
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: auto 90vh;
+    background-position: center;
+    font-size: $heading-size;
+    font-family: $font-alternate;
+    letter-spacing: 0.8px;
+    color: $text-color;
+    text-align: center;
+    min-height: 100vh;
+    display: table;
+    width: 100%;
+    #videolink:hover {
+        cursor: pointer;
+    }
+    #herocontainer {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        span {
+            font-size: $medium-font-size;
+            line-height: $watch;
+            @include media-query($on-palm) {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 5vw;
+            }
+        }
+        h1 {
+            margin-bottom: $none-spacing-unit;
+            @include media-query($on-palm) {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 48px;
+                font-size: 10vw;
+            }
+        }
+        .icon {
+            > svg {
+                width: $watch;
+                height: $watch;
+            }
+        }
+    }
+}
+
+.link {}
+/*Chevron*/
+/*Source - http://codepen.io/jonneal/pen/kptBs
+http://jsfiddle.net/audetwebdesign/jSVyY/*/
+/* http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div */
+
+#mainpagefooter {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 8vh;
+    display: table;
+}
+
+#arrowcontain {
+    display: table-cell;
+    vertical-align: middle;
+    transition-duration: .2s;
+}
+
+$chevron-size: $small-font-size * 1.2;
+$border-size: $chevron-size / 10;
+#downarrow {
+    margin: 0 auto;
+    border-style: solid;
+    border-width: $border-size $border-size 0 0;
+    content: '';
+    height: $chevron-size;
+    width: $chevron-size;
+    margin-top: -10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    transition-duration: .2s;
+}
+
+#mainpagefooter:hover #arrowcontain {
+    color: #919191;
+    cursor: pointer;
+}
+
+.hidden {
+    min-height:0;
+    opacity:0;
+}
+.animateoutvideo {
+    transform-style: preserve-3d;
+    -webkit-animation: ease-in-out animateoutvideo .5s;
+    animation: ease-in-out animateoutvideo .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.animateinvideo {
+    transform-style: preserve-3d;
+    -webkit-animation: ease-in-out animateinvideo .5s;
+    animation: ease-in-out animateinvideo .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    min-height:100vh;
+    height:100vh;
+    animation-duration:.2s;
+    transition-duration:.2s;
+}
+
+
+.animateoutmenu {
+    transform-style: preserve-3d;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-animation: ease-in-out animateout .5s;
+    animation: ease-in-out animateout .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animateoutmenu {
+    transform-style: preserve-3d;
+    -webkit-animation: ease-in-out animateout .5s;
+    animation: ease-in-out animateout .5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animatein {
+    opacity:0;
+}
+
+.fadein {
+    opacity:1;
+    transition-duration:.2s;
+}
+
+@keyframes animateout {
+    from {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    to {
+        margin-top: -10px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes animateout {
+    from {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    to {
+        margin-top: -10px;
+        opacity: 0;
+    }
+}
+
+@keyframes animatein {
+    from {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animatein {
+    from {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animateoutvideo {
+    from {
+        min-height: 100vh;
+        opacity:1;
+    }
+    to {
+        min-height: 0;
+        opacity:0;
+    }
+}
+@-webkit-keyframes animateoutvideo {
+    from {
+        min-height: 100vh;
+        opacity:1;
+    }
+    to {
+        min-height: 0;
+        opacity:0;
+    }
+}
+@keyframes animateinvideo {
+    from {
+        min-height: 0vh;
+        opacity:0;
+    }
+    to {
+        min-height: 100vh;
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes animateinvideo {
+    from {
+        height:0vh;
+        opacity:0;
+    }
+    to {
+        height:100vh;
+        opacity:1;
+    }
+}

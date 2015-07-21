@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Lane';
+    src: url('Lane/LANENAR_-webfont.eot');
+    src: url('Lane/LANENAR_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Lane/LANENAR_-webfont.woff') format('woff'),
+         url('Lane/LANENAR_-webfont.ttf') format('truetype'),
+         url('Lane/LANENAR_-webfont.svg#lane_-_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway_thin-webfont.eot');
+    src: url('Raleway/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway_thin-webfont.woff') format('woff'),
+         url('Raleway/raleway_thin-webfont.ttf') format('truetype'),
+         url('Raleway/raleway_thin-webfont.svg#lane_-_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Our variables
+$base-font-family: 'Lane', 'Helvetica', sans-serif;
+$font-alternate: 'Raleway', 'Helvetica', sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$sm-font-size:     $base-font-size * 1.2;
+$medium-font-size: $base-font-size * 1.6;
+$heading-size:     $base-font-size * 2;
+$base-line-height: 1.3;
+
+$spacing-unit:        30px;
+$none-spacing-unit:   0px;
+$font-spacing-unit:   .5px;
+
+$text-color:       #f0f0f0;
+$background-color: #000;
+$brand-color:      #ff8365;
+$brand-color-dark: darken($brand-color, 5%);
+
+$grey-color:       #dddddd;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "home"
+;
