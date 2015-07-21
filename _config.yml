@@ -3,8 +3,8 @@ title: Innumerable
 email: coldflamestudios@gmail.com
 description: >
  Innumerable is a beautiful collection of abstract visualisations, and is a striking portfolio showcasing what ColdFlame Studios, as a group, are capable of. It is an exhibit of what we’ve learned over the years, particularly in the areas of media and mathematics. The end result: a collection of visualisations that is mesmerising and beautiful.
-baseurl: "https://cfws.github.io/Innumerable"
-url: "https://cfws.github.io/Innumerable"
+baseurl: "/Innumerable/"
+url: "https://cfws.github.io"
 github_username: CFWS
 
 # Build settings
