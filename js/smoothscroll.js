@@ -11,19 +11,15 @@ Changed to window.scrollY and window.scroll(0, target) -> Where 0 is for Horizon
     interrupted
  */
 
-function scrollPosition()
-{
-    if (window.scrollY == 0 || window.scrollY == undefined)
-    {
+function scrollPosition() {
+    if (window.scrollY === 0 || window.scrollY === undefined) {
         return document.documentElement.scrollTop;
-    }
-    else
-    {
+    } else {
         return window.scrollY;
     }
 }
 
-var smooth_scroll_to = function(target, duration) {
+var smooth_scroll_to = function (target, duration) {
     target = Math.round(target);
     duration = Math.round(duration);
     if (duration < 0) {
@@ -44,14 +40,18 @@ var smooth_scroll_to = function(target, duration) {
     var distance = target - start_top;
 
     // based on http://en.wikipedia.org/wiki/Smoothstep
-    var smooth_step = function(start, end, point) {
-        if(point <= start) { return 0; }
-        if(point >= end) { return 1; }
+    var smooth_step = function (start, end, point) {
+        if (point <= start) {
+            return 0;
+        }
+        if (point >= end) {
+            return 1;
+        }
         var x = (point - start) / (end - start); // interpolation
-        return x*x*(3 - 2*x);
-    }
+        return x * x * (3 - 2 * x);
+    };
 
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {
         // This is to keep track of where the element's scrollTop is
         // supposed to be, based on what we're doing
         //var previous_top = element.scrollTop;
@@ -59,11 +59,15 @@ var smooth_scroll_to = function(target, duration) {
         var previous_top = scrollPosition();
 
         // This is like a think function from a game loop
-        var scroll_frame = function() {
+        var scroll_frame = function () {
             //if(element.scrollTop != previous_top) {
-            if(scrollPosition() != previous_top) {
-                //reject("interrupted");
+            if (scrollPosition() !== previous_top) {
+                if (navigator.userAgent.match(/iPhone/i) === false || (navigator.userAgent.match(/iPod/i))) === false {
+                                reject("interrupted");
                 return;
+
+                }
+                
             }
 
             // set the scrollTop for this frame
@@ -74,7 +78,7 @@ var smooth_scroll_to = function(target, duration) {
             window.scroll(0, frameTop);
 
             // check if we're done!
-            if(now >= end_time) {
+            if (now >= end_time) {
                 resolve();
                 return;
             }
@@ -88,10 +92,14 @@ var smooth_scroll_to = function(target, duration) {
                 return;
             }
 
-            previous_top = element.scrollTop;*/
-
             if(scrollPosition() === previous_top
                && scrollPosition() !== frameTop) {
+                resolve();
+                return;
+            }
+            */
+
+            if (target === scrollPosition) {
                 resolve();
                 return;
             }
@@ -100,9 +108,9 @@ var smooth_scroll_to = function(target, duration) {
 
             // schedule next frame for execution
             setTimeout(scroll_frame, 0);
-        }
+        };
 
         // boostrap the animation process
         setTimeout(scroll_frame, 0);
     });
-}
+};
