@@ -2,6 +2,8 @@
 layout: page
 title:  "About"
 ---
+![Mandelbrot]({{ "/img/full/Mandelbrot.png" | prepend: site.baseurl }})
+
 Description
 ===========
 Innumerable is a beautiful collection of abstract visualisations, and is a striking portfolio showcasing what ColdFlame Studios, as a group, is capable of. It is an exhibit of what we’ve learned over the years, particularly in the areas of media and mathematics. The end result: a collection of visualisations that is mesmerising and beautiful, and aimed to inspire interest in mathematics and information technology. 

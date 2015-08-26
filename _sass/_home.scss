@@ -2,6 +2,13 @@ h1, h2, h3, h4, h5, h6, p, li
 {
     cursor:default;
 }
+img {
+    padding:2vh 0;
+}
+.gist
+{
+    margin-top:3vh;
+}
 #portfolio:hover a{
     opacity:.9;
     transition-duration:.2s;
@@ -20,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p, li
             height:auto;
             margin: 0 auto;
             padding: 2vh 0;
+            line-height: auto;
         }
         font-size:0;
         display:inline-block;
@@ -30,6 +38,7 @@ h1, h2, h3, h4, h5, h6, p, li
         height:30.667vh;
         height:calc(92vh/3);
         text-align:center;
+        line-height:calc(92vh/3);
     }
     a:hover
     {
@@ -50,6 +59,7 @@ h1, h2, h3, h4, h5, h6, p, li
         max-height:100%;
         max-width:100%;
         width:auto;
+        vertical-align:middle;
         display: inline-block;
         text-align:center;
     }

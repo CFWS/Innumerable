@@ -6,6 +6,8 @@ description: >
 baseurl: "/Innumerable"
 url: "https://cfws.github.io"
 github_username: CFWS
+permalink: /:title/
+include: ["_pages"]
 
 # Build settings
 markdown: kramdown
