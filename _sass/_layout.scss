@@ -260,6 +260,12 @@ width:         calc(100% - (#{$spacing-unit} / 2));
     p {
         margin-bottom: $spacing-unit * .8;
         font-weight:300;
+            white-space: pre-wrap;    
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;  
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;
+
     }
 }
 .gist
