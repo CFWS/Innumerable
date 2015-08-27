@@ -19,5 +19,5 @@ Code
 
 References
 ----------
-[http://mathworld.wolfram.com/LangtonsAnt.html](http://mathworld.wolfram.com/LangtonsAnt.html){:target="_blank"}  
+[http://mathworld.wolfram.com/LangtonsAnt.html](http://mathworld.wolfram.com/LangtonsAnt.html){:target="_blank"} 
 [https://en.wikipedia.org/wiki/Langton%27s_ant](https://en.wikipedia.org/wiki/Langton%27s_ant){:target="_blank"}

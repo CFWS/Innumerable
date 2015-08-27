@@ -15,5 +15,5 @@ Code
 
 References
 ----------
-[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes){:target="_blank"}  
+[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes){:target="_blank"} 
 [http://www.dcs.gla.ac.uk/~jhw/spirals/](http://www.dcs.gla.ac.uk/~jhw/spirals/){:target="_blank"}

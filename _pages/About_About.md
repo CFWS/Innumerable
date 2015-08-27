@@ -26,12 +26,12 @@ However, the purpose of Innumerable is also to showcase everything that we, as a
 
 Licenses
 ---------
-Attractor Code is derived from "de Jong Attractor" by Thor Frølich  
-Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license.  
-Work: http://openprocessing.org/visuals/?visualID=2097  
+Attractor Code is derived from "de Jong Attractor" by Thor Frølich 
+Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license. 
+Work: http://openprocessing.org/visuals/?visualID=2097 
 Revised Attractor Code: https://gist.github.com/YC/8484eb73b3b66959308d  
 
-[Lazy Sizes](https://github.com/aFarkas/lazysizes) - Licensed under MIT   
+[Lazy Sizes](https://github.com/aFarkas/lazysizes) - Licensed under MIT 
 [Promise Polyfill](https://github.com/taylorhakes/promise-polyfill) - Licensed under MIT  
 
 See Also

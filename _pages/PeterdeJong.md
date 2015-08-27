@@ -30,14 +30,14 @@ References
 
 License
 ----------
-Strange Attractor code were derived from:  "de Jong Attractor" by Thor Frølich  
-Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license.  
+Strange Attractor code were derived from:  "de Jong Attractor" by Thor Frølich 
+Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license. 
 Original Work: http://openprocessing.org/visuals/?visualID=2097
 
-Modifications were made.   
+Modifications were made. 
 Modified Code:  See Above  
 
-http://creativecommons.org/licenses/by-sa/3.0/  
-http://creativecommons.org/licenses/GPL/2.0/  
+http://creativecommons.org/licenses/by-sa/3.0/ 
+http://creativecommons.org/licenses/GPL/2.0/ 
 
-These licenses apply to the Henon and Peter de Jong attractors. 
+These licenses apply to the Henon and Peter de Jong attractors.
