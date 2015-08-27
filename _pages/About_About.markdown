@@ -17,7 +17,8 @@ Conception
 ----------
 Innumerable started as an a project through which we could take on new programming skills and widen our capabilities as a producer of digital and IT media. Producing useful graphical systems was the original aim - and as such Innumerable began as visualisations to help conceptualise mathematical concepts, as well as to inspire interest in mathematics and IT. Over time, as more and more of the project began to take shape, more visualisations were produced. Finally, as the project was in its intermediate stages, the opportunity to enter the project into YICTE arose, and as such, the entry was created and finalised. 
 
-Purpose & Abstract
+Purpose & Abs
+tract
 ----------
 
 Innumerable was conceived in our minds with one end goal - to inspire interest in maths in the minds of young people, and to show how the purity of maths can be applied on the digital landscape to produce visualisations that are both useful and striking. 

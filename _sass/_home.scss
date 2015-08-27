@@ -26,7 +26,7 @@ img {
             height:auto;
             margin: 0 auto;
             padding: 2vh 0;
-            line-height: auto;
+            line-height: normal;
         }
         font-size:0;
         display:inline-block;
@@ -161,8 +161,8 @@ iframe {
     height: 85%;
     @include media-query($on-palm) {
         height: calc(80vw/16*9);
+        display:none;
     }
-
 }
 $watch: 30px;
 #hero {
