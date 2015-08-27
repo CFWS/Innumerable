@@ -1,8 +1,9 @@
 ---
 layout: page
 title:  "About"
+permalink: "/About/"
 ---
-![Mandelbrot]({{ "/img/full/Mandelbrot.png" | prepend: site.baseurl }})
+![Mandelbrot]({{ "/img/full/Mandelbrot.png" | prepend: site.baseurl }}){:class="lazyload"}
 
 Description
 ===========
@@ -30,8 +31,9 @@ Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license.
 Work: http://openprocessing.org/visuals/?visualID=2097  
 Revised Attractor Code: https://gist.github.com/YC/8484eb73b3b66959308d  
 
-Lazy Sizes - Licensed under MIT  
-https://github.com/aFarkas/lazysizes  
+[Lazy Sizes](https://github.com/aFarkas/lazysizes) - Licensed under MIT   
+[Promise Polyfill](https://github.com/taylorhakes/promise-polyfill) - Licensed under MIT  
 
-Promise Polyfill - Licensed under MIT  
-https://github.com/taylorhakes/promise-polyfill
+See Also
+---------
+[Colophon](Colophon)
