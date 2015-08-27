@@ -6,7 +6,8 @@
     font-family:$font-alternate;
     font-family:'Open Sans', 'Lane', sans-serif;
 
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit * 1.5;
+    margin-bottom: $spacing-unit * 1.1;
     /*border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;*/
     min-height: 56px;
@@ -206,10 +207,12 @@ width:         calc(100% - (#{$spacing-unit} / 2));
 * Posts
 */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 }
 
 .post-title {
+    margin-top:10px;
+    margin-top:2vh;
     font-size: 26px;
     vertical-align:middle;
     @include media-query($on-laptop) {
@@ -221,7 +224,7 @@ width:         calc(100% - (#{$spacing-unit} / 2));
     font-family:'Open Sans', 'Lane', sans-serif;
     margin-bottom: $spacing-unit * 0;
     img {
-        padding-top:$spacing-unit * .7;
+        padding-top:$spacing-unit * 0;
         padding-bottom:$spacing-unit * .5;
     }
     h1 {
@@ -258,4 +261,8 @@ width:         calc(100% - (#{$spacing-unit} / 2));
         margin-bottom: $spacing-unit * .8;
         font-weight:300;
     }
+}
+.gist
+{
+    margin-bottom:3vh;
 }
