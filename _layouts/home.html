@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <script type="application/javascript" src="js/smoothscroll.min.js" async=""></script>
-        <script type="application/javascript" src="js/script.min.js" async=""></script>
+        <script type="application/javascript" src="js/script.min.js"></script>
         <script type="application/javascript" src="js/lazysizes.min.js" async=""></script>
         <!--[if IE 6]>
         <script type="application/javascript" src="js/Promise.js" async=""></script>
@@ -19,6 +19,7 @@
         <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
         <![endif]-->
+        <noscript><style>.animatein,.lazyload {opacity:1;}</style></noscript>
     </head>
 
     <body>

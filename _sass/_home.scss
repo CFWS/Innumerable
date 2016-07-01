@@ -1,24 +1,24 @@
-h1, h2, h3, h4, h5, h6, p, li
-{
+h1, h2, h3, h4, h5, h6, p, li {
     cursor:default;
 }
 img {
     padding:2vh 0;
 }
-#portfolio:hover a{
+
+/* Portfolio (Front Page) */
+#portfolio:hover a {
     opacity:.9;
     transition-duration:.2s;
 }
 #portfolio {
     margin: 0 auto;
-    padding-top:8vh;
+    padding-top: 8vh;
     min-height: 92vh;
     font-size:0;
     @include media-query($on-palm) {
         padding-top:0;
     }
-    a
-    {
+    a {
         @include media-query($on-palm) {
             padding-top:0;
             display:block;
@@ -39,12 +39,10 @@ img {
         text-align:center;
         line-height:calc(92vh/3);
     }
-    a:hover
-    {
+    a:hover {
         opacity:1;
     }
-    img
-    {
+    img {
         font-size:0;
         @include media-query($on-palm) {
             display:block;
@@ -62,13 +60,9 @@ img {
         display: inline-block;
         text-align:center;
     }
-    a:nth-child(1) img, a:nth-child(4) img
-    {
-        /*height:100%;*/
-    }
 }
-/* Header */
 
+/* Header */
 #mainpageheader {
     transform-style: preserve-3d;
     margin: 0;
@@ -86,11 +80,9 @@ img {
         margin-top:20px;
     }
 
-    li:nth-child(3)
-    {
+    li:nth-child(3) {
         padding:0;
-        a
-        {
+        a {
             @include media-query($on-palm) {
                 padding:5px;
                 width:80%;
@@ -116,7 +108,6 @@ img {
             padding:5px;
             width:80%;
             font-size:12px;
-
         }
         margin: 0;
         padding: 0;
@@ -128,7 +119,6 @@ img {
         display: inline-block;
         transition-duration: .5s;
         cursor: pointer;   
-
     }
 }
 
@@ -144,11 +134,9 @@ img {
 
 #video {
     position: relative;
-    /*background-color:#212121; Testing*/
     width: 100%;
     text-align: center;
 }
-
 iframe {
     border:0;
     position: absolute;
@@ -164,6 +152,7 @@ iframe {
         display:none;
     }
 }
+
 $watch: 30px;
 #hero {
     height:100vh;
@@ -238,12 +227,12 @@ $watch: 30px;
     }
 }
 
-.link {}
-/*Chevron*/
-/*Source - http://codepen.io/jonneal/pen/kptBs
-http://jsfiddle.net/audetwebdesign/jSVyY/*/
-/* http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div */
-
+/*
+    Chevron
+    http://codepen.io/jonneal/pen/kptBs
+    http://jsfiddle.net/audetwebdesign/jSVyY/
+    http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div
+*/
 #mainpagefooter {
     bottom: 0;
     position: absolute;
@@ -256,13 +245,11 @@ http://jsfiddle.net/audetwebdesign/jSVyY/*/
         display:none;
     }
 }
-
 #arrowcontain {
     display: table-cell;
     vertical-align: middle;
     transition-duration: .2s;
 }
-
 $chevron-size: $small-font-size * 1.2;
 $border-size: $chevron-size / 10;
 #downarrow {
@@ -278,16 +265,12 @@ $border-size: $chevron-size / 10;
     transform: rotate(135deg);
     transition-duration: .2s;
 }
-
 #mainpagefooter:hover #arrowcontain {
     color: #919191;
     cursor: pointer;
 }
 
-.hidden {
-    min-height:0;
-    opacity:0;
-}
+/* Animation */
 .animateoutvideo {
     transform-style: preserve-3d;
     -webkit-animation: ease-in-out animateoutvideo .5s;
@@ -308,8 +291,6 @@ $border-size: $chevron-size / 10;
     animation-duration:.2s;
     transition-duration:.2s;
 }
-
-
 .animateoutmenu {
     transform-style: preserve-3d;
     background-color: rgba(0, 0, 0, 0.2);
@@ -320,19 +301,13 @@ $border-size: $chevron-size / 10;
     animation-fill-mode: forwards;
 }
 
-.animateoutmenu {
-    transform-style: preserve-3d;
-    -webkit-animation: ease-in-out animateout .5s;
-    animation: ease-in-out animateout .5s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
 .animatein {
+    opacity: 0;
+}
+.hidden {
+    min-height:0;
     opacity:0;
 }
-
 .fadein {
     opacity:1;
     transition-duration:.2s;
@@ -340,44 +315,33 @@ $border-size: $chevron-size / 10;
 
 @keyframes animateout {
     from {
-        margin-top: 0px;
         opacity: 1;
     }
     to {
-        margin-top: -10px;
         opacity: 0;
     }
 }
-
 @-webkit-keyframes animateout {
     from {
-        margin-top: 0px;
         opacity: 1;
     }
     to {
-        margin-top: -10px;
         opacity: 0;
     }
 }
-
 @keyframes animatein {
     from {
-        margin-top: -10px;
         opacity: 0;
     }
     to {
-        margin-top: 0px;
         opacity: 1;
     }
 }
-
 @-webkit-keyframes animatein {
     from {
-        margin-top: -10px;
         opacity: 0;
     }
     to {
-        margin-top: 0px;
         opacity: 1;
     }
 }
@@ -412,7 +376,6 @@ $border-size: $chevron-size / 10;
         opacity:1;
     }
 }
-
 @-webkit-keyframes animateinvideo {
     from {
         height:0vh;
