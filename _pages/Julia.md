@@ -10,7 +10,9 @@ Creation of this visualisation was comparatively simple, as the complex number f
 
 Code
 ----------
-<script src="https://gist.github.com/YC/6799e9264a02f1de603e.js"></script>
+{% highlight vb linenos %}
+{% include code/JuliaSet.vb %}
+{% endhighlight %}
 
 References
 ----------

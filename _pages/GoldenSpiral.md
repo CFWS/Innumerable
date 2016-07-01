@@ -9,7 +9,9 @@ The Golden Spiral was a challenging visualisation to produce. In order to create
 
 Code
 ----------
-<script src="https://gist.github.com/YC/d983572beefdd2406a31.js"></script>
+{% highlight vb linenos %}
+{% include code/GoldenSpiral.vb %}
+{% endhighlight %}
 
 References
 ----------

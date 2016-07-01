@@ -11,7 +11,9 @@ The Ulams spiral is similar to the Sacks spiral, but instead of looping in a spi
 
 Code
 ----------
-<script src="https://gist.github.com/YC/8c9363f11d0caf23cf05.js"></script>
+{% highlight vb linenos %}
+{% include code/SacksSpiral.vb %}
+{% endhighlight %}
 
 References
 ----------

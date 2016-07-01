@@ -11,4 +11,6 @@ This was relatively challenging to program, as values were hard to interpret. On
 
 Code
 ----------
-<script src="https://gist.github.com/YC/ac17551baf6fc68d150b.js"></script>
+{% highlight vb linenos %}
+{% include code/Buddhabrot.vb %}
+{% endhighlight %}

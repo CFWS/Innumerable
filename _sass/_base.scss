@@ -98,11 +98,12 @@ pre, code {
     border-radius: 3px;
 }
 figure {
+    margin: 10px 0;
     padding: 3px;
-    border-radius: 5px;
+    border-radius: 1.5px;
 }
 pre {
-    padding: 7px 5px;
+    padding: 8px 5px;
     overflow-x: scroll;
     > code {
         border: 0;

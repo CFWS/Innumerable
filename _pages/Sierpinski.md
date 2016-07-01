@@ -13,7 +13,12 @@ In this case, the visualisation was produced by generating an array in a loop, w
 
 Code
 ----------
-<script src="https://gist.github.com/YC/ad941a94337f06eac1a7.js"></script>
+{% highlight vb linenos %}
+{% include code/Carpet.vb %}
+{% endhighlight %}
+{% highlight vb linenos %}
+{% include code/Triangle.vb %}
+{% endhighlight %}
 
 References
 ----------

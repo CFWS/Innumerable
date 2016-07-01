@@ -11,7 +11,9 @@ In creating the Mandelbrot, mathematical guidelines needed to be adhered to in o
 
 Code
 ----------
-<script src="https://gist.github.com/YC/b59a050d250bcf6f21d6.js"></script>
+{% highlight vb linenos %}
+{% include code/Mandelbrot.vb %}
+{% endhighlight %}
 
 References
 ----------

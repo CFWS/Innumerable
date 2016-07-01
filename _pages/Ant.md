@@ -11,7 +11,9 @@ If it happens to repeat turns within a square, it adds to the ‘counter’ at t
 
 Code
 ----------
-<script src="https://gist.github.com/YC/82b1944da19e392f9758.js"></script>
+{% highlight vb linenos %}
+{% include code/Ant.vb %}
+{% endhighlight %}
 
 References
 ----------

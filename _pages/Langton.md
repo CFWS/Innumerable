@@ -15,7 +15,9 @@ The concept has been further explored by mathematicians and computer scientists,
 
 Code
 ----------
-<script src="https://gist.github.com/YC/beb2a4671d4872640c3e.js"></script>
+{% highlight java linenos %}
+{% include code/Ant.pde %}
+{% endhighlight %}
 
 References
 ----------
