@@ -20,8 +20,8 @@ Typography
 
 Apps & Tools
 ----------
-[Sip](https://itunes.apple.com/us/app/sip/id507257563?mt=12){:target="_blank"} 
 [git](https://git-scm.com/){:target="_blank"} 
+[Sip](https://itunes.apple.com/us/app/sip/id507257563?mt=12){:target="_blank"} 
 [Gist](https://gist.github.com/){:target="_blank"} 
 [Jekyll](http://jekyllrb.com/){:target="_blank"} 
 [Github](https://github.com/){:target="_blank"} 

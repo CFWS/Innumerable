@@ -25,7 +25,7 @@ Code
 
 References
 ----------
-[http://www.openprocessing.org/sketch/2097](http://paulbourke.net/fractals/peterdejong/){:target="_blank"}  
+[http://www.openprocessing.org/sketch/2097](http://paulbourke.net/fractals/peterdejong/){:target="_blank"}
 [http://paulbourke.net/fractals/peterdejong/](http://paulbourke.net/fractals/peterdejong/){:target="_blank"}
 
 License

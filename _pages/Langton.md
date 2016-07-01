@@ -11,7 +11,7 @@ The Langton’s Ant visualisation is produced using the simple set of rules devi
 - When reaching a black square, the ant turns 90 degrees in the opposite direction, flips the colour of the square to white, and progresses one step
 
 It is believed that regardless of the direction that the ant starts in, the ant will always emerge onto a ‘highway’ pattern, which is shown in the image above. 
-The concept has been further explored by mathematicians and computer scientists, who have added ant colonies(termites) to produce complex patterns that are both mesmerising and beautiful. 
+The concept has been further explored by mathematicians and computer scientists, who have added ant colonies(termites) to produce further complex patterns. 
 
 Code
 ----------
