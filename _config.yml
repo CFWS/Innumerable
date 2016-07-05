@@ -9,6 +9,9 @@ github_username: CFWS
 permalink: /:title/
 include: ["_pages"]
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

@@ -197,7 +197,7 @@
 .post-title {
     margin-top: 10px;
     margin-top: 2vh;
-    font-size: 27px;
+    font-size: 25px;
     vertical-align: middle;
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -213,18 +213,22 @@
     }
     h1 {
         font-size: $medium-font-size;
-
+        margin-top: 25px;
+        margin-bottom: 10px;
         @include media-query($on-laptop) {
             font-size: 30px;
         }
     }
     h2 {
         font-size: $sm-font-size * 1.1;
-        margin-top: 35px;
-
+        margin-top: 25px;
+        margin-bottom: 10px;
         @include media-query($on-laptop) {
             font-size: 28px;
         }
+    }
+    #conception {
+        margin-top: 0;
     }
 
     h3 {
@@ -243,7 +247,7 @@
         }
     }
     p {
-        margin-bottom: $spacing-unit * .45;
+        margin-bottom: $spacing-unit * .5;
         font-weight: 300;
         white-space: pre-wrap;    
         white-space: -moz-pre-wrap;

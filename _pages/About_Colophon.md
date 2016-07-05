@@ -6,7 +6,7 @@ permalink: "/About/Colophon/"
 
 Website & Server
 ----------
-This site is hosted on Github Pages and is linked to a github repository which may be found [here](https://github.com/CFWS/Innumerable){:target="_blank"}.
+This site is hosted on Github Pages and is linked to a github repository which may be found [here](https://github.com/CFWS/Innumerable){:target="_blank"}. 
 Static pages on this site (such as this one) are generated from Markdown by [Jekyll](http://jekyllrb.com/){:target="_blank"}.
 
 The site uses HTML5 and CSS3 for layout and appearance.
