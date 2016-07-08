@@ -1,8 +1,8 @@
 Module SacksSpiral
-
     ' Equations
     '  x = -cos(sqrt(i)*2*pi)*sqrt(i)
     '  y = sin(sqrt(i)*2*pi)*sqrt(i) 
+
     Sub Main()
         Dim i As Integer = 0
         Using BMP As New Drawing.Bitmap(301, 301)
@@ -12,13 +12,12 @@ Module SacksSpiral
             Primes.Primes(22726)
 
             For i = 0 To Primes.TruePrimesList.Count - 1
-                ' Max in circle
+                ' Next coordinates
                 x = -1 * Math.Cos(Math.Sqrt(Primes.TruePrimesList(i)) * 2 * Math.PI) * Math.Sqrt(Primes.TruePrimesList(i)) + 150
                 y = Math.Sin(Math.Sqrt(Primes.TruePrimesList(i)) * 2 * Math.PI) * Math.Sqrt(Primes.TruePrimesList(i)) + 150
-                ' Next coordinates
 
-                Dim Colour As New HSBColour(0.663328938 * Math.Sqrt(Primes.TruePrimesList(i)) + 200, 0.8, 0.9)
                 ' Colour hue is based on square root of number
+                Dim Colour As New HSBColour(0.663328938 * Math.Sqrt(Primes.TruePrimesList(i)) + 200, 0.8, 0.9)
 
                 BMP.SetPixel(x, y, Colour.HSBToRGB)
             Next
@@ -30,7 +29,6 @@ Module SacksSpiral
 End Module
 
 Module Primes
-
     Public Property PrimesFactorList As New System.Collections.Generic.List(Of Integer) 'Store Primes up to Square Root of 'n'
     Public Property TruePrimesList As New System.Collections.Generic.List(Of Integer) ' The list of combined primes
     ' Determine if Number is Prime
@@ -44,7 +42,6 @@ Module Primes
     End Sub
 
     Sub Primes(Number As Integer)
-
         Console.WriteLine("Primes")
         Console.WriteLine("Parameter: n - " & Number)
 
@@ -74,7 +71,6 @@ Module Primes
             Next
         Next
 
-
         TruePrimesList.AddRange(PrimesFactorList) ' Add the primes from PrimesFactorList (Primes up to the square root of Number)
         PrimesFactorList.Clear()
 
@@ -83,6 +79,7 @@ Module Primes
                 TruePrimesList.Add(i + 2)
             End If
         Next
+
         PrimesArray = Nothing
         TruePrimesList.Sort() ' Sort the List
 
