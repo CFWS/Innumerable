@@ -25,14 +25,14 @@ Code
 
 References
 ----------
-[http://www.openprocessing.org/sketch/2097](http://paulbourke.net/fractals/peterdejong/){:target="_blank"}
+[https://www.openprocessing.org/sketch/2097/](https://www.openprocessing.org/sketch/2097/){:target="_blank"}
 [http://paulbourke.net/fractals/peterdejong/](http://paulbourke.net/fractals/peterdejong/){:target="_blank"}
 
 License
 ----------
 Strange Attractor code were derived from:  "de Jong Attractor" by Thor Frølich
 Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license.
-Original Work: http://openprocessing.org/visuals/?visualID=2097
+Original Work: https://www.openprocessing.org/sketch/2097/
 
 Modifications were made.
 Modified Code: See Above
