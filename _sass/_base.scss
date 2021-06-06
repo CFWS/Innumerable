@@ -8,6 +8,10 @@ ol, ul, figure {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /**
 * Basic styling
 */
@@ -51,6 +55,14 @@ a {
         text-decoration: none;
     }
     word-wrap: break-word;
+}
+/* Normal colour */
+a.normal {
+    color: $text-color;
+}
+a.full {
+    width: 100%;
+    height: 100%;
 }
 
 /**

@@ -3,7 +3,7 @@ layout: page
 title:  "About"
 permalink: "/About/"
 ---
-![Mandelbrot]({{ "/img/full/Mandelbrot.png" | prepend: site.baseurl }}){:class="lazyload"}
+![Mandelbrot]({{ "/img/full/Mandelbrot.png" | prepend: site.baseurl }}){:loading="lazy"}
 
 Description
 ===========
@@ -29,7 +29,6 @@ Licensed under Creative Commons Attribution-Share Alike 3.0 and GNU GPL license.
 Work: [https://www.openprocessing.org/sketch/2097/](https://www.openprocessing.org/sketch/2097/)
 Revised Attractor Code: [https://gist.github.com/YC/8484eb73b3b66959308d](https://gist.github.com/YC/8484eb73b3b66959308d)
 
-[Lazy Sizes](https://github.com/aFarkas/lazysizes) - Licensed under MIT
 [Promise Polyfill](https://github.com/taylorhakes/promise-polyfill) - Licensed under MIT
 
 See Also

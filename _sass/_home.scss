@@ -80,7 +80,7 @@ img {
         margin-top:20px;
     }
 
-    li:nth-child(3) {
+    li {
         padding:0;
         a {
             @include media-query($on-palm) {
@@ -114,22 +114,11 @@ img {
         font-size: 1.7vmin;
         width: 33%;
         min-width: 8%;
-        padding: 3vh 0;
         color: white;
         display: inline-block;
         transition-duration: .5s;
-        cursor: pointer;   
+        cursor: pointer;
     }
-}
-
-/*https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md*/
-.lazyload,
-.lazyloading {
-    opacity: 0;
-}
-.lazyloaded {
-    opacity: 1;
-    transition: opacity 300ms;
 }
 
 #video {

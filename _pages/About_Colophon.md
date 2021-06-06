@@ -38,5 +38,4 @@ Apps & Tools
 Licenses
 ---------
 [Smooth Scrolling](https://coderwall.com/p/hujlhg/smooth-scrolling-without-jquery){:target="_blank"}
-[Lazy Sizes](https://github.com/aFarkas/lazysizes){:target="_blank"} - Licensed under MIT
 [Promise Polyfill](https://github.com/taylorhakes/promise-polyfill){:target="_blank"} - Licensed under MIT

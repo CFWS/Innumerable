@@ -3,7 +3,7 @@ permalink: "/Visualisation/deJong/"
 layout: page
 title:  "Peter de Jong Attractor"
 ---
-![Peter de Jong Attractor]({{ "/img/full/deJong.png" | prepend: site.baseurl }}){:class="lazyload"}
+![Peter de Jong Attractor]({{ "/img/full/deJong.png" | prepend: site.baseurl }}){:loading="lazy"}
 
 Attractor & Animation
 ----------
